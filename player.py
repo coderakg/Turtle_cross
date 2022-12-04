@@ -4,7 +4,6 @@ STARTING_POSITION = (0, -280)
 MOVE_DISTANCE = 10
 FINISH_LINE_Y = 280
 
-#creating the ability to move the turtle in forward directions
 class Player(Turtle):
     
     def __init__(self): 
@@ -12,7 +11,7 @@ class Player(Turtle):
         self.shape("turtle")
         self.penup()
         self.go_to_start()
-        self.setheading(90) # to initialise the direction of the turtle we will use the setheading function
+        self.setheading(90) 
 
 
     def go_to_start(self):
@@ -27,5 +26,3 @@ class Player(Turtle):
             print("Finished")
         else:
             return False
-            
-    
